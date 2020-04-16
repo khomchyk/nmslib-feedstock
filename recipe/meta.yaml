@@ -1,5 +1,5 @@
 {% set name = "nmslib" %}
-{% set version = "2.0.5" %}
+{% set version = "2.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,18 +7,18 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6a72b132b4b7fe7d697767005c69bc66c8fbc83dbba2d07109c0da29c0f00353
+  sha256: 252f1355385e15c5c855a3f57cd8e48db8154c2a4edd8750956b8e66cf5c79ed
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install --no-deps --no-binary :all: ." 
+  number: 0
+  script: '{{ PYTHON }} -m pip install --no-deps --no-binary :all: .'
 
 requirements:
   build:
-    - {{ compiler('cxx') }} 
-    
+    - {{ compiler('cxx') }}
+
   host:
-    - python 
+    - python
     - setuptools
     - psutil
     - pip >=10
