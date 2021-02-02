@@ -1,5 +1,5 @@
 {% set name = "nmslib" %}
-{% set version = "2.0.16" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: baf1e1648ced605d4d67170776682431acfa9c1b9310650d7b58e573bfde5d5f
+  sha256: 971294a7766f91c697d63c88c8adda4797a944346cc535a217393f4167a19c20
 
 build:
   number: 0
